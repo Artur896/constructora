@@ -4,6 +4,7 @@ import "./globals.css";
 import { COMPANY } from "@/lib/data";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import Preloader from "@/components/layout/Preloader";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -101,6 +102,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <Preloader />
         <SmoothScroll>
           {children}
           <WhatsAppButton />
